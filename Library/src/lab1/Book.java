@@ -6,52 +6,42 @@ package lab1;
  */
 public class Book {
 
-    /**
-     * This book's title.
-     */
-    private String title;
+   
     
-    /**
-     * True if this book is borrowed and false otherwise.
-     */
+     
+    private String title;
+ 
     private boolean borrowed;
 
-    /**
-     * Creates a new Book.
-     * @param bookTitle The title of the book that will be created.
-     */
+    
+     
+    
+     
     public Book(String bookTitle) {
-        // TODO: Implement this method
+    bookTitle = "Of Mice and Men";
+    title = bookTitle;
     }
    
-    /** 
-     * Marks this book as rented.
-     */
+
     public void rented() {
-        // TODO: Implement this method
+    int rented = 1;
+    borrowed = true;
     }
    
-    /**
-     * Marks this book as not rented.
-     */
+
     public void returned() {
-        // TODO: Implement this method
+    int returned = 2;
+    borrowed = false;
     }
    
-    /**
-     * Returns true if this book is rented, false otherwise.
-     * @return true if this book is rented and false otherwise.
-     */
+
     public boolean isBorrowed() {
-        // TODO: Implement this method
+    return borrowed;
     }
    
-    /** 
-     * Returns this book's title as a String.
-     * @return This book's title as a String.
-     */
+
     public String getTitle() {
-        // TODO: Implement this method
+     return title;
     }
 
     public static void main(String[] arguments) {
